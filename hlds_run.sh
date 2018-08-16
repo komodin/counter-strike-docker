@@ -37,8 +37,20 @@ if [ -n "${RCON_PASSWORD}" ]; then
     OPTIONS+=("+rcon_password" "${RCON_PASSWORD}")
 fi
 
-if [ -n "${ADMIN_STEAM}" ]; then
-    echo "\"STEAM_${ADMIN_STEAM}\" \"\"  \"abcdefghijklmnopqrstu\" \"ce\"" >> "/opt/hlds/cstrike/addons/amxmodx/configs/users.ini"
+if [ -n "${ADMIN_STEAM1}" ]; then
+    echo "\"STEAM_${ADMIN_STEAM1}\" \"\"  \"abcdefghijklmnopqrstu\" \"ce\"" >> "/opt/hlds/cstrike/addons/amxmodx/configs/users.ini"
+fi
+
+if [ -n "${ADMIN_STEAM2}" ]; then
+    echo "\"STEAM_${ADMIN_STEAM2}\" \"\"  \"abcdefghijklmnopqrstu\" \"ce\"" >> "/opt/hlds/cstrike/addons/amxmodx/configs/users.ini"
+fi
+
+if [ -n "${ADMIN_STEAM3}" ]; then
+    echo "\"STEAM_${ADMIN_STEAM3}\" \"\"  \"abcdefghijklmnopqrstu\" \"ce\"" >> "/opt/hlds/cstrike/addons/amxmodx/configs/users.ini"
+fi
+
+if [ -n "${ADMIN_STEAM4}" ]; then
+    echo "\"STEAM_${ADMIN_STEAM4}\" \"\"  \"abcdefghijklmnopqrstu\" \"ce\"" >> "/opt/hlds/cstrike/addons/amxmodx/configs/users.ini"
 fi
 
 set > "${CONFIG_FILE}"

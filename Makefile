@@ -1,15 +1,15 @@
 
 # Build options
-IMAGE_NAME?="cs16ds"
-IMAGE_TAG?="alpha"
+IMAGE_NAME?="bondistrike"
+IMAGE_TAG?="v1"
 
-STEAM_USER?="anonymous"
+STEAM_USER?=""
 STEAM_PASSWORD?=""
 
 DOCKER_NO_CACHE?="false"
 
 # Publish options
-DOCKER_PUBLISH_NAME?="cs16ds/server"
+DOCKER_PUBLISH_NAME?="bondistrike/server"
 DOCKER_PUBLISH_TAG?=$(IMAGE_TAG)
 
 # Test tools
